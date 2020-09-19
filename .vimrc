@@ -1,8 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'zcodes/vim-colors-basic'
-"CodeSniffer"
-Plug 'bpearson/vim-phpcs'
 "Автозакрывающие скобки"
 Plug 'jiangmiao/auto-pairs'
 "Поиск по файлам"
@@ -15,7 +13,9 @@ Plug 'damage220/solas.vim'
 Plug 'mklabs/split-term.vim'
 call plug#end()
 
-let Vimphpcs_Standard='/usr/share/php/PHP/CodeSniffer/Standards/PSR2'" 
+let g:molokai_original = 1
+colo molokai
+
 set number
 set tabstop=4
 set shiftwidth=4
@@ -30,8 +30,7 @@ set cursorline
 set backspace=indent,eol,start
 
 set t_Co=256
-syntax on
-set background=dark
+set syntax=on
 
 set hlsearch
 set incsearch
